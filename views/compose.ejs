@@ -1,0 +1,16 @@
+<%- include("paritals/header")-%>
+<h1>compose</h1>
+<form class="" action="/compose" method="post">
+  <div class="mb-3">
+    title<br />
+    <input type="text" name="title" class="form-control">
+  </div>
+  <div class="mb-3">
+    post<br />
+    <textarea  name="para" class="form-control" rows="3"></textarea>
+  </div>
+  <br />
+
+<button type="submit" class="btn btn-primary" name="button">publish</button>
+</form>
+<%- include("paritals/footer")-%>

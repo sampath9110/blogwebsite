@@ -1,0 +1,17 @@
+<%- include("paritals/header")-%>
+<h1>
+  home
+</h1>
+<p>
+  <%= h%>
+</p>
+<%  posts.forEach(function(po){ %>
+  <h1><%=po.name%></h1>
+  <p>
+    <%=(po.lpp||"")?.substring(1,100)+"...."%>
+    <a href="posts/<%=po._id%>">read more
+      </a>&nbsp &nbsp
+      <a href="del/<%=po._id%>">del</a>
+  </p>
+<%})%>
+<%- include("paritals/footer") -%>
